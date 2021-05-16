@@ -1,0 +1,1 @@
+This is my first mini project attempting to use CSS and HTML to replicate the google-homepage 
