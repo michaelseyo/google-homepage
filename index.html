@@ -2,10 +2,33 @@
 <style>
     .google-container {
         text-align: center;
-        padding: 250px 0; /* top/bottom is 70px, right/left is 0px */
+        padding: 250px 0 30px 0; /* top/bottom is 250px, right/left is 0px */
+    }
+
+    .wrapper {
+        position: relative;
+        display: flex;
+        min-width: 100px;
+        width: 500px;
+        margin-bottom: 20px;
+        margin-right: auto;
+        margin-left: auto; /* margin right left to center the search-bar */
     }
 
     .search-bar {
+        border: 1px solid rgb(204, 203, 203);
+        border-radius: 30px;
+        height: 30px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .search-bar:hover, .search-bar:focus {
+        box-shadow: 0 0 5px rgb(202, 202, 202);
+        outline: none; /* removes default blue hightlight around box for text input */
+    }
+
+    .search-buttons {
         text-align: center;
     }
 </style>
@@ -21,8 +44,13 @@
                     alt="Coloured Google logo">
         </div>
         
-        <div class="search-bar"> 
-            <input type="text">
+        <div class="wrapper">
+            <input class="search-bar" type="text"> 
+        </div>
+
+        <div class="search-buttons"> 
+            <button type="button">Google Search</button>
+            <button type="button">I'm Feeling Lucky</button>
         </div>
     </body>
 </html>
