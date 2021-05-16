@@ -46,15 +46,29 @@
         cursor: pointer; 
     }
 
-    .other-languages {
+    .other-languages-container {
         margin-top: 30px;
     }
 
-    p {
+    .other-languages-text {
         text-align: center;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 13px;
     }
+
+    .footer-container {
+        margin-top: 650px;
+        background-color: rgb(238, 238, 238);
+    }
+    /* Use float: left/right to have left/right align on same line */
+    .footer-left {
+        float: left;
+    }
+
+    .footer-right {
+        float: right;
+    }
+
 </style>
 
 <html>
@@ -77,10 +91,21 @@
             <a href=""><button class="search-button" type="button">I'm Feeling Lucky</button></a>
         </div>
         
-        <div class="other-languages">
-            <p>
+        <div class="other-languages-container">
+            <p class="other-languages-text">
                 Google offered in: <a href="">中文(简体)</a> <a href="">Bahasa Melayu</a> <a href="">தமிழ்</a>
             </p>
         </div>
+
+        <footer class="footer-container">
+            <p>Singapore</p>
+            <hr>
+            <p class="footer-left">
+                <a href="">About</a> <a href="">Advertising</a> <a href="">Business</a> <a href="">How Search works</a>
+            </p>
+            <p class="footer-right"> 
+                <a href="">Privacy</a> <a href="">Terms</a> <a href="">Settings</a>
+            </p>
+        </footer>
     </body>
 </html>
