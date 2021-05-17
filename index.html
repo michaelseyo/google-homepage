@@ -1,5 +1,31 @@
 <!DOCTYPE html>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"> <!-- importing the google icons -->
 <style>
+    ul {
+        list-style-type: none; /* removes the bullet points */
+        margin: 0; /* flush top */
+        padding: 0;
+        overflow: hidden;
+    }
+
+    li {
+        float: right;
+    }
+
+    li a { /* this is for li with anchor (a) class */
+        display: block;
+        padding: 20px 10px;
+        text-decoration: none; /* removes the default underline */
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color:rgb(49, 49, 49)
+    }
+
+    li a:hover {
+        text-decoration: underline;
+    }
+
     .google-container {
         text-align: center;
         margin: 250px 0 30px 0; /* top/bottom is 250px, right/left is 0px */
@@ -57,7 +83,7 @@
     }
 
     .footer-container {
-        margin-top: 650px;
+        margin-top: 620px;
         background-color: rgb(238, 238, 238);
     }
     /* Use float: left/right to have left/right align on same line */
@@ -70,13 +96,18 @@
     }
 
 </style>
-
 <html>
     <head>
         <title>Google</title> <!-- this appears in the tabs area-->
     </head>
 
     <body>
+        <ul>
+            <li><a href=""><span class="material-icons">apps</span></a></li>
+            <li><a href="">Images</a></li>
+            <li><a href="">Gmail</a></li>
+        </ul>
+
         <div class="google-container">
             <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" 
                     alt="Coloured Google logo">
