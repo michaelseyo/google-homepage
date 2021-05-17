@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
       rel="stylesheet"> <!-- importing the google icons -->
 <style>
     ul {
@@ -28,7 +28,7 @@
 
     .google-container {
         text-align: center;
-        margin: 250px 0 30px 0; /* top/bottom is 250px, right/left is 0px */
+        margin: 185px 0 30px 0; /* top/bottom is 250px, right/left is 0px */
     }
 
     .wrapper {
@@ -39,6 +39,11 @@
         margin-bottom: 20px;
         margin-right: auto;
         margin-left: auto; /* margin right left to center the search-bar */
+    }
+
+    .wrapper span {
+        margin-top: 10px;
+        color: rgb(204, 203, 203)
     }
 
     .search-bar {
@@ -92,8 +97,18 @@
     }
 
     .footer-container {
-        margin-top: 620px;
+        position: absolute; /* positioned relative to the nearest positioned ancestor */
+        left: 0;
+        right: 0;
+        bottom: 0;
         background-color: rgb(238, 238, 238);
+    }
+
+    .footer-top-text {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        padding-left: 20px;
+        color: rgb(141, 141, 141);
     }
     /* Use float: left/right to have left/right align on same line */
     .footer-left {
@@ -112,7 +127,7 @@
 
     <body>
         <ul>
-            <li><a href=""><span class="material-icons">apps</span></a></li>
+            <li><a href=""><span class="material-icons-outlined">apps</span></a></li>
             <li><a href="">Images</a></li>
             <li><a href="">Gmail</a></li>
         </ul>
@@ -123,10 +138,12 @@
         </div>
         
         <div class="wrapper">
+            <span class="material-icons-outlined">search</span> 
             <input class="search-bar" type="text"> 
+            <span class="material-icons-outlined">mic</span>
         </div>
             
-        <div class="search-button-container"> 
+        <div class="search-button-container">              
             <a href=""><button class="search-button" type="button">Google Search</button></a>
             <a href=""><button class="search-button" type="button">I'm Feeling Lucky</button></a>
         </div>
@@ -138,14 +155,20 @@
         </div>
 
         <footer class="footer-container">
-            <p>Singapore</p>
+            <p class="footer-top-text">Singapore</p>
             <hr>
-            <p class="footer-left">
-                <a href="">About</a> <a href="">Advertising</a> <a href="">Business</a> <a href="">How Search works</a>
-            </p>
-            <p class="footer-right"> 
-                <a href="">Privacy</a> <a href="">Terms</a> <a href="">Settings</a>
-            </p>
+            <ul class="footer-left">
+                <li><a href="">How Search works</a></li>
+                <li><a href="">Business</a></li> 
+                <li><a href="">Advertising</a></li> 
+                <li><a href="">About</a></li> 
+            </ul>
+
+            <ul class="footer-right">
+                <li><a href="">Settings</a></li>
+                <li><a href="">Terms</a></li> 
+                <li><a href="">Privacy</a></li> 
+            </ul>
         </footer>
     </body>
 </html>
