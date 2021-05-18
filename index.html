@@ -2,31 +2,31 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
       rel="stylesheet"> <!-- importing the google icons -->
 <style>
-    ul {
+    .top-right-links {
         list-style-type: none; /* removes the bullet points */
         margin: 0; /* flush top */
         padding: 0;
         overflow: hidden;
     }
 
-    li {
+    .top-right-links li {
         float: right;
     }
 
-    li a { /* this is for li with anchor (a) class */
+    .top-right-links li a { /* this is for li with anchor (a) class */
         display: block;
         padding: 20px 10px;
         text-decoration: none; /* removes the default underline */
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 12px;
+        font-size: 14px;
         color:rgb(49, 49, 49)
     }
 
-    li a:hover {
+    .top-right-links li a:hover {
         text-decoration: underline;
     }
 
-    li a span {
+    .top-right-links li a span {
         position: relative;
         top: -5px;
     }
@@ -72,6 +72,10 @@
     .search-bar-mic-icon { /* to position the icons within the search-bar */
         position: absolute;
         right: 15px;
+    }
+
+    .search-bar-mic-icon:hover {
+        cursor: pointer; 
     }
 
     .search-button-container {
@@ -122,17 +126,61 @@
     .footer-top-text {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 15px;
-        padding-left: 20px;
-        color: rgb(141, 141, 141);
+        padding-left: 30px;
+        color: rgb(120, 120, 120);
+    }
+
+    .footer-bottom-container {
+        position: absolute;
+        left: 0;
+        right: 0;
+        background-color: rgb(238, 238, 238);
     }
 
     /* Use float: left/right to have left/right align on same line */
     .footer-left {
+        display: inline-block; /* so the left and right links can be placed on the SAME LINE inline */
+        list-style-type: none; /* removes the bullet points */
+        overflow: hidden;
+    }
+
+    .footer-left li {
         float: left;
     }
 
+    .footer-left li a {
+        padding: 0px 20px 0 0;
+        text-decoration: none; /* removes the default underline */
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        color: rgb(120, 120, 120);
+    }
+
+    .footer-left li a:hover {
+        text-decoration: underline;
+    }
+
     .footer-right {
+        display: inline-block;
         float: right;
+        list-style-type: none; /* removes the bullet points */
+        overflow: hidden;
+    }
+
+    .footer-right li {
+        float: right;
+    }
+
+    .footer-right li a {
+        padding: 0 40px 0px 0px;
+        text-decoration: none; /* removes the default underline */
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        color: rgb(120, 120, 120);
+    }
+
+    .footer-right li a:hover {
+        text-decoration: underline;
     }
 
 </style>
@@ -142,7 +190,7 @@
     </head>
 
     <body>
-        <ul> <!-- right-side -->
+        <ul class="top-right-links"> <!-- right-side -->
             <li><a href=""><span class="material-icons-outlined">apps</span></a></li>
             <li><a href="">Images</a></li>
             <li><a href="">Gmail</a></li>
@@ -174,16 +222,16 @@
             <p class="footer-top-text">Singapore</p>
             <hr>
             <ul class="footer-left">
-                <li><a href="">How Search works</a></li>
-                <li><a href="">Business</a></li> 
-                <li><a href="">Advertising</a></li> 
                 <li><a href="">About</a></li> 
+                <li><a href="">Advertising</a></li> 
+                <li><a href="">Business</a></li> 
+                <li><a href="">How Search works</a></li>               
             </ul>
 
             <ul class="footer-right">
                 <li><a href="">Settings</a></li>
                 <li><a href="">Terms</a></li> 
-                <li><a href="">Privacy</a></li> 
+                 <li><a href="">Privacy</a></li> 
             </ul>
         </footer>
     </body>
