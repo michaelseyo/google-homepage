@@ -28,12 +28,21 @@
 
     .top-right-links li a span {
         position: relative;
-        top: -5px;
+        color:rgb(120, 120, 120);
+        top: -12px; /* adjust the icon position */
+        /* when hover, circle created wont move surrounding elements & increase size of circle */
+        /* border all around */
+        border: 10px solid transparent;
+    }
+
+    .top-right-links li a span:hover {
+        background-color: rgb(238, 238, 238);
+        border-radius: 50%;
     }
 
     .google-container {
         text-align: center;
-        margin: 185px 0 30px 0; /* top/bottom is 250px, right/left is 0px */
+        margin: 160px 0 30px 0; /* top/bottom is 250px, right/left is 0px */
     }
 
     .wrapper {
